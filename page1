@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV WIZARD</title>
+</head>
+
+ <style>
+    body {
+      background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2012/10/teal-fur-texture.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+<body>
+	<h1 align="center" style="color:navy;">Welcome to CV Wizard</h1>
+</br>
+</br>
+</br>
+	<button style="background-color: navy; color: white; font-size: 24px; padding: 10px 20px;">Make my CV</button>
+
+</body>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<body>
+<p>
+  <h2 style="font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; text-align: center; color: #333;">CV Wizard website is a useful tool for job seekers looking to create a professional and compelling.The website provides a user-friendly interface with easy-to-use tools to create<br>an impressive resume that highlights the skills, qualifications, and experience of the user.<br>resume that showcases their qualifications and experiences in a clear and concise way.</h2>
+  <br>
+</p>
+</body>
+
+
+</html>
