@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In / Log In Form</title>
+
+   <style>
+    body {
+      background-image: url("https://tse2.mm.bing.net/th?id=OIP.zgCjvb7gyfEcSyEene3umAHaEo&pid=Api&P=0");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+    <style>
+      /* Style for the form container */
+      .form-container {
+        width: 400px;
+        margin: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      
+      /* Style for the form inputs */
+      input[type=text], input[type=email], input[type=password] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Style for the form submit button */
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      /* Style for the form cancel button */
+      .cancelbtn {
+        background-color: #f44336;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-right: 10px;
+      }
+      
+      /* Clear floats after the form */
+      .form-container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      /* Center the form headings */
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Sign In / Log In Form</h2>
+      
+      <form action="" method="post">
+        <h3>Sign In</h3>
+        <label for="username"><b>Username:</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        
+        <label for="password"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        
+        <button type="submit">Sign In</button>
+        <button type="button" class="cancelbtn">Cancel</button>
+      </form>
+      
+      <form action="" method="post">
+        <h3>Log In</h3>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        
+        <label for="password"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        
+        <button type="submit">Log In</button>
+        <button type="button" class="cancelbtn">Cancel</button>
+
+	<label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+      </form>
+    </div>
+  </body>
+</html>
