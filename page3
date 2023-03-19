@@ -1,109 +1,162 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Sign In / Log In Form</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-   <style>
-    body {
-      background-image: url("https://tse2.mm.bing.net/th?id=OIP.zgCjvb7gyfEcSyEene3umAHaEo&pid=Api&P=0");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+            integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+            crossorigin="anonymous">
+    </script>
 
     <style>
-      /* Style for the form container */
-      .form-container {
-        width: 400px;
-        margin: auto;
-        border: 1px solid #ccc;
-        padding: 20px;
-      }
-      
-      /* Style for the form inputs */
-      input[type=text], input[type=email], input[type=password] {
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
-      
-      /* Style for the form submit button */
-      input[type=submit] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-      
-      /* Style for the form cancel button */
-      .cancelbtn {
-        background-color: #f44336;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-        margin-right: 10px;
-      }
-      
-      /* Clear floats after the form */
-      .form-container::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
-      /* Center the form headings */
-      h2 {
-        text-align: center;
-      }
+        .heading {
+            text-align: center;
+            color: #ff6a00;
+        }
     </style>
-  </head>
-  <body>
-    <div class="form-container">
-      <h2>Sign In / Log In Form</h2>
-      
-      <form action="" method="post">
-        <h3>Sign In</h3>
-        <label for="username"><b>Username:</b></label>
-        <input type="text" placeholder="Enter Username" name="username" required>
-        
-        <label for="password"><b>Password:</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        
-        <button type="submit">Sign In</button>
-        <button type="button" class="cancelbtn">Cancel</button>
-      </form>
-      
-      <form action="" method="post">
-        <h3>Log In</h3>
-        <label for="email"><b>Email:</b></label>
-        <input type="email" placeholder="Enter Email" name="email" required>
-        
-        <label for="password"><b>Password:</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        
-        <button type="submit">Log In</button>
-        <button type="button" class="cancelbtn">Cancel</button>
+</head>
 
-	<label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+<body>
+    <h2 class="heading">
+       Code Wizard
+    </h2>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-      </form>
-    </div>
-  </body>
+    <form id="form-print" enctype="text/plain"
+          class="form-control">
+
+
+        
+        <label for="name">
+            <strong>Name: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="name" name="Name" placeholder="Enter Name">
+        <br>
+
+        <label for="Date of birth">
+            <strong>Enter Date of birth: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="age" name="Age" placeholder="XX/XX/XX">
+        <br>
+
+        <label for="Address">
+            <strong>Enter Address: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="age" name="Age" placeholder="Enter your Address">
+        <br>
+
+        
+        
+        
+        <label for="education">
+            <strong>Enter Education: </strong>
+        </label>
+        <select class="form-control" id="education" name="Education">
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Arts">Arts</option>
+        </select>
+        <br>
+
+        <label for="ssc">
+            <strong>SSC: </strong>
+        </label>
+        <input class="form-control" type="text" id="ssc" name="SSC" placeholder="Enter SSC information">
+        <br>
+
+        <label for="hsc">
+            <strong>HSC: </strong>
+        </label>
+        <input class="form-control" type="text" id="hsc" name="HSC" placeholder="Enter HSC information">
+        <br>
+
+
+        
+        
+        
+        <label for="Email">
+            <strong>Enter Email: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="age" name="Age" placeholder="Enter email">
+        <br>
+
+        <label for="Phone">
+            <strong>Enter Phone: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="age" name="Age" placeholder="Enter your phone number">
+        <br>
+
+        <label for="Experiences">
+            <strong>Experiences: </strong>
+        </label>
+        <input class="form-control" type="text"
+               id="name" name="Name" placeholder="Enter your work experiences">
+        <br>
+        
+        <label for="subject">
+            <strong>Select Skills: </strong>
+        </label>
+        <select class="form-control"
+                id="skills" name="skills " placeholder="Enter Skills">
+            <option value="com">
+                computer programming
+            </option>
+            <option value="soft">
+                software development
+            </option>
+            <option value="mac">
+                machine learning
+            </option>
+            <option value="Others">
+                Others
+            </option>
+        </select>
+        <br>
+
+        <label for="message">
+            <strong>Enter Message </strong>
+        </label>
+        <textarea class="form-control"
+                  id="message" name="message"
+                  placeholder="Enter you message"
+                  style="height:100px"></textarea>
+        <br>
+
+        <input type="button" class="btn btn-primary"
+               onclick="GeneratePdf();" value="GeneratePdf">
+    </form>
+
+    <script>
+       
+        function GeneratePdf() {
+            var element = document.getElementById('form-print');
+            html2pdf(element);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
 </html>
